@@ -1,0 +1,156 @@
+.body{
+    width: auto;
+}
+.Nav-bar{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    min-width: 250px ; 
+    height: 80px;
+    -webkit-box-pack: justify;
+    -webkit-box-direction: normal;
+    overflow: hidden;
+
+}
+@media screen and (max-width: 600px) {
+    .Nav-bar a:not(:first-child) {display: none;}
+    .Nav-bar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+.log{
+    color: white;
+    display: inline;
+    list-style: none;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    padding: 28px 17px;
+        line-height: inherit;
+
+}
+.Reg{
+    display: inline;
+    margin: inherit;
+    justify-content: center;
+      color: white;
+     font-weight: 700;
+     padding: 28px 17px;
+
+}
+.help{
+    display: inline;
+    margin: inherit;
+    justify-content: center;
+      color: white;
+     font-weight: 700;
+     padding: 28px 17px;
+}
+.med{
+    width: 37.62px;
+    color: white;
+    margin: auto;
+    border-left: 2px solid rgb(251, 251, 251);
+    height: 80px;
+    transform: rotate(51deg);
+    transform-origin: 20% 40%;
+}
+.Lite{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+}
+.titu{
+    font-weight: 300;
+    height: 400px;
+    width: 1340px;
+    font-size: 4em;
+    font-family:  Sans Narrow;
+}
+.aLog{
+    cursor:progress;
+}
+.aLog:hover{
+color: lemonchiffon;
+}
+.aReg{
+    cursor:progress;
+}
+.aReg:hover{
+    color: lemonchiffon;
+    }
+.dot {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(#E555E0, #9198e5);
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 8s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  
+    
+  }
+  .dot:hover {
+    background: linear-gradient(#94aa45, #9198e5);
+
+}
+
+  .figu{
+    border-radius: 20%;
+    background: linear-gradient(#E555E0, #9198e5);
+    height: 20px;
+    width: 100px;
+    transform: rotate(21deg);
+  }
+  .figu2{
+    border-radius: 20%;
+    background: linear-gradient(#2059f6, #9198e5);
+    height: 30px;
+    width: 100px;
+    transform: rotate(21deg);
+  }
+  .dot2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .dot1{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(#E555E0, #9198e5);
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 8s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(12deg);
+    }
+    to {
+        transform: perspective(500px) translate3d(1500px, 100px, 30px);
+    }
+  }
+  .dot1:hover {
+    background: linear-gradient(#2451a3, #f00000);
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
